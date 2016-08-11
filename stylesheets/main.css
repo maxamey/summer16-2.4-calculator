@@ -1,0 +1,74 @@
+
+/*
+color for dark - rgb(104, 178, 91);
+color for light - rgb(133, 192, 123);
+color for borders - rgb(153, 202, 145);
+*/
+
+
+* {
+  box-sizing: border-box;
+  font: 1.5rem Helvetica, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.description {
+  text-transform: uppercase;
+}
+
+.calculator {
+  display: inline-block;
+  background-color: rgb(104, 178, 91);
+  width: 16rem;
+  height: 20rem;
+  margin-top: 4rem;
+  font-size: 0;
+}
+
+.top {
+  display: inline-block;
+  width: 100%;
+  height: 20%;
+}
+
+.clear{
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  vertical-align: top;
+  border: 1px solid white;
+  text-align: center;
+}
+
+.output{
+  display: inline-block;
+  width: 75%;
+  height: 100%;
+  vertical-align: top;
+  border: 1px solid white;
+}
+
+.bottom{
+  display: inline-block;
+  width: 100%;
+  height: 80%;
+  font-size: 0;
+}
+
+.keys{
+  display: inline-block;
+  width: 25%;
+  height: 25%;
+  vertical-align: top;
+  border: 1px solid white;
+}
+
+.operators{
+  display: inline-block;
+  width:25%;
+  height: 25%;
+  border: 1px solid white;
+  background-color: rgb(133, 192, 123);
+}
