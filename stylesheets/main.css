@@ -6,49 +6,76 @@ color for borders - rgb(153, 202, 145);
 */
 
 
-* {
+*{
   box-sizing: border-box;
   font: 1.5rem Helvetica, sans-serif;
   color: white;
   margin: 0;
   padding: 0;
+  text-align: center;
+
 }
 
-.description {
+html {
+	height: 100%;
+	background: white;
+	background: radial-gradient(circle, #fff 20%, #ccc);
+	background-size: cover;
+}
+
+.describe{
   text-transform: uppercase;
+  font: 1.5rem Helvetica, sans-serif;
+  color: black;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
-.calculator {
+.calculator{
   display: inline-block;
   background-color: rgb(104, 178, 91);
   width: 16rem;
   height: 20rem;
-  margin-top: 4rem;
+  margin: 4rem, auto;
+  margin-bottom: 2rem;
   font-size: 0;
+  text-align: center;
 }
 
-.top {
+.calculator:hover{
+  cursor:default;
+}
+
+.keys:hover{
+  display:inline-block;
+  background-color: rgb(133, 192, 123);
+  font-size: 1.8rem;
+}
+
+.top{
+  position: relative;
   display: inline-block;
   width: 100%;
   height: 20%;
 }
 
-.clear{
-  display: inline-block;
-  width: 25%;
-  height: 100%;
-  vertical-align: top;
-  border: 1px solid white;
-  text-align: center;
-}
 
-.output{
+.display{
   display: inline-block;
   width: 75%;
   height: 100%;
   vertical-align: top;
   border: 1px solid white;
+  float: right;
+  line-height: 4rem;
+  vertical-align: center;
+  background-color: rgb(104, 178, 91);
+  overflow: hidden;
 }
+
+/*.display:hover{
+  border: .5rem solid white;
+}*/
 
 .bottom{
   display: inline-block;
@@ -63,6 +90,24 @@ color for borders - rgb(153, 202, 145);
   height: 25%;
   vertical-align: top;
   border: 1px solid white;
+  padding: auto;
+  line-height: 4rem;
+  vertical-align: center;
+  user-select: none;
+}
+
+.clear{
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  vertical-align: top;
+  border: 1px solid white;
+  line-height: 4rem;
+  vertical-align: center;
+}
+
+.clear:hover{
+  background-color: rgb(255, 177, 64);
 }
 
 .operators{
@@ -71,4 +116,20 @@ color for borders - rgb(153, 202, 145);
   height: 25%;
   border: 1px solid white;
   background-color: rgb(133, 192, 123);
+  line-height: 4rem;
+  vertical-align: center;
+}
+
+.operators:hover{
+  background-color: rgb(228, 241, 225);
+  color: rgb(99, 175, 85);
+
+}
+
+.eval {
+  background-color: rgb(104, 178, 91);
+}
+.eval:hover{
+  background-color: rgb(144, 208, 236);
+  color: rgb(0, 157, 228);
 }
